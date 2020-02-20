@@ -1,7 +1,7 @@
 {
 	"name": "deep-merge-test",
 	"version": "1.0.0",
-	"description": "test bed for deep merge js utils features",
+	"description": "A test bed to help you find the deep merge tool you need",
 	"main": "merge.test.js",
 	"scripts": {
 		"test": "jest",
@@ -12,7 +12,11 @@
 		"test",
 		"deepmerge"
 	],
-	"author": "cyberbiont",
+	"author": {
+		"name": "Yaroslav Larin",
+		"email": "cyberbiont@gmail.com"
+	},
+	"repository": "github:cyberbiont/deep-merge-test",
 	"license": "MIT",
 	"devDependencies": {
 		"chai": "^4.2.0",

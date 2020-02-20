@@ -1,0 +1,6 @@
+.sidenotes/*
+.gitattributes
+.eslintrc.js
+.editorconfig
+prettier.config.js
+tmp/*
