@@ -1,6 +1,6 @@
 {
 	"name": "deep-merge-test",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A test bed to help you find the deep merge tool you need",
 	"main": "merge.test.js",
 	"scripts": {
