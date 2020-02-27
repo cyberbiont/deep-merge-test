@@ -8,7 +8,7 @@ module.exports = {
 			{
 				resultDir: 'tmp/reporters/jest-stare',
 				reportTitle: 'jest-stare!',
-				// 🕮 <YL> 535ad251-bc17-4fa2-8d1d-45bd9e5b4c9c.md
+				// 🕮 <cyberbiont> 535ad251-bc17-4fa2-8d1d-45bd9e5b4c9c.md
 			},
 		],
 	],

@@ -10,7 +10,7 @@ Deep merge is a costly and non-trivial operation, which can differ in implementa
 
 A number of pre-defined tests are rigged up to test different aspects of deep merge operation by comparing original and new objects. Test suite is executed by Jest.
 
-Test results will help you to understand the difference between the tools and choose the one that fot you most depending on the situation. You can also add another tool to the test and check how it compares.
+Test results will help you to understand the difference between the tools and choose the one that fits you the most depending on the situation. You can also add another tool to the test and check how it compares.
 
 ## Usage
 

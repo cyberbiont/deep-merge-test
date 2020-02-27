@@ -4,7 +4,7 @@ const chalk = require('chalk')
 const _ = require('lodash')
 
 const mergersSetup = {
-	// 🕮 <YL> 1214179c-21fe-4691-9afe-b3342a6e93bc.md
+	// 🕮 <cyberbiont> 1214179c-21fe-4691-9afe-b3342a6e93bc.md
 	'Object.assign': [Object.assign],
 	'deep-extend': [require('deep-extend')],
 	'jquery extend': [require('extend'), { jquery: true }],
@@ -13,18 +13,18 @@ const mergersSetup = {
 	'_.merge': [_.merge],
 	'_.assign': [_.assign],
 	'_.defaults': [_.defaults],
-	//! 🕮 <YL> 371cd416-ac09-4195-b587-c5bbd517e060.md
+	//! 🕮 <cyberbiont> 371cd416-ac09-4195-b587-c5bbd517e060.md
 	'defaults': [require('defaults'), { reverse: true }],
 	'merge-options': [require('merge-options')],
 	'deepmerge': [require('deepmerge')],
 }
 Object.keys(mergersSetup).forEach(merger => {
 	describe(`${merger} test`, () => {
-		// 🕮 <YL> ad13b15a-525a-4dea-b298-6c95fb27653d.md
+		// 🕮 <cyberbiont> ad13b15a-525a-4dea-b298-6c95fb27653d.md
 		test(...mergersSetup[merger])
 	})
 })
-// 🕮 <YL> 10e41a8f-21c0-4532-89d7-6abc15fe69a5.md
+// 🕮 <cyberbiont> 10e41a8f-21c0-4532-89d7-6abc15fe69a5.md
 
 function test(merger, o = {}) {
 	function execute(...args) {
@@ -58,7 +58,7 @@ function test(merger, o = {}) {
 				nestedToKeep: 'tgt',
 			}, // {…} is plain, therefore an Option Object
 			array: ['tgt'], // arrays are Option Values
-			// 🕮 <YL> 03357f3a-ba62-41e9-8d6a-c4a3e64a5360.md
+			// 🕮 <cyberbiont> 03357f3a-ba62-41e9-8d6a-c4a3e64a5360.md
 		}
 
 		const src = {
@@ -77,7 +77,7 @@ function test(merger, o = {}) {
 				},
 			},
 			array: ['src'],
-			// 🕮 <YL> 1180fea8-16d9-43de-9859-fe135678075a.md
+			// 🕮 <cyberbiont> 1180fea8-16d9-43de-9859-fe135678075a.md
 		}
 
 		// commense test
@@ -114,7 +114,7 @@ function test(merger, o = {}) {
 
 		it('should handle nested objects', () => {
 			expect(result).to.have.nested.property('parent.nestedToKeep')
-			// 🕮 <YL> 4658aaf0-b6e2-43e0-8dd0-604f7cc2b569.md
+			// 🕮 <cyberbiont> 4658aaf0-b6e2-43e0-8dd0-604f7cc2b569.md
 			expect(result.deepParent).to.eql({
 				nested: { deepNestedToKeep: 123, deepNestedToOverride: 'src' },
 			})
@@ -152,7 +152,7 @@ function test(merger, o = {}) {
 			// expect(result).to.have.property('isEnumerable');
 			expect(result).to.have.property('isNotEnumerable')
 		})
-		// 🕮 <YL> 62aecf5e-82af-4848-8acb-89128a84aea4.md
+		// 🕮 <cyberbiont> 62aecf5e-82af-4848-8acb-89128a84aea4.md
 	})
 
 	describe('deep object immutability test', () => {
@@ -226,5 +226,5 @@ function test(merger, o = {}) {
 		})
 	})
 
-	// 🕮 <YL> 781f99f3-3da6-43d9-9c73-88d4cbdd4340.md
+	// 🕮 <cyberbiont> 781f99f3-3da6-43d9-9c73-88d4cbdd4340.md
 }
