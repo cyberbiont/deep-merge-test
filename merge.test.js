@@ -80,7 +80,7 @@ function test(merger, o = {}) {
 			// 🕮 <cyberbiont> 1180fea8-16d9-43de-9859-fe135678075a.md
 		}
 
-		// commense test
+		// commence test
 		let result
 		try {
 			result = execute(target, src)
